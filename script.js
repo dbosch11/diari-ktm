@@ -10,6 +10,8 @@ fotos.forEach(function(foto) {
         visor.style.display = "flex";
 
         fotoGran.src = foto.src;
+        fotoGran.alt = foto.alt;
+
     });
 
 });
@@ -18,6 +20,7 @@ fotos.forEach(function(foto) {
 tancar.addEventListener("click", function() {
 
     visor.style.display = "none";
+    fotoGran.src = "";
 
 });
 
@@ -25,7 +28,10 @@ tancar.addEventListener("click", function() {
 visor.addEventListener("click", function(event) {
 
     if (event.target === visor) {
+
         visor.style.display = "none";
+        fotoGran.src = "";
+
     }
 
 });

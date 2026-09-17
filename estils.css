@@ -122,6 +122,13 @@ main {
     cursor: pointer;
 }
 
+.galeria video {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    background-color: #000000;
+    }
+
 
 /* BOTÓ TORNAR */
 
@@ -154,6 +161,8 @@ footer {
 
 /* VISOR DE FOTOGRAFIES */
 
+/* VISOR DE FOTOGRAFIES */
+
 #visor {
     display: none;
 
@@ -166,15 +175,21 @@ footer {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.92);
 
     justify-content: center;
     align-items: center;
+
+    cursor: zoom-out;
 }
 
-#visor img {
+#foto-gran {
     max-width: 90%;
-    max-height: 85%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
 }
 
 #tancar {
@@ -183,7 +198,7 @@ footer {
     top: 20px;
     right: 30px;
 
-    font-size: 35px;
+    font-size: 40px;
     color: white;
 
     cursor: pointer;
@@ -209,4 +224,5 @@ footer {
     .galeria img {
         height: 250px;
     }
+
 }
